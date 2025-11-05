@@ -19,7 +19,7 @@ async function setupDatabase() {
     `);
 
     if (dbCheck.rows.length === 0) {
-      console.log('📦 Creando base de datos...');
+      console.log(' Creando base de datos...');
       await adminClient.query(`CREATE DATABASE ${process.env.DB_NAME}`);
       console.log(' Base de datos creada');
     } else {
